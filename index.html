@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="">
         <title>Cash Register.</title>
         <link rel="stylesheet" href="index.css">
-
+     
     </head>
     <body>
         <div class="container">
@@ -16,14 +16,14 @@
                 Enter the bill amount and cash given by the coustomer and know
                 minimum number of notes to return.
             </p>
-            <label for="bill-amount">Bill amount:  </label>
+            <label class="bill" for="bill">Bill amount:  </label>
             <input id="bill-amount" type="number" />
             <!-- <button>Next</button> -->
-            <label for="cash-given">Cash given: </label>
+            <label class="bill" for="bill">Cash given: </label>
             <input id="cash-given" type="number" />
-            <button id="checkbtn">Check</button>
+            <button class="checkbtn">Check</button>
             <p id="error-message"></p>
-            <table class="change-table">
+            <table class="change-table" border= 2px solid>
                 <caption>
                     Return Change
                 </caption>
