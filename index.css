@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 *{
+    margin: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;;
 }
 .container{
       margin: 4rem auto 7rem;
@@ -32,7 +35,7 @@ margin : 1rem auto;
 border: 2px solid #7c3aed;
 border-radius: 0.5rem;
 }
-.checkbtn
+#checkbtn
 {
     background: #7c3aed;
     border: none;
@@ -45,6 +48,13 @@ border-radius: 0.5rem;
     margin: auto;
     display: block;
 }
+
+#error-message{
+    font-size: 1.5rem;
+    margin: 1rem;
+   
+
+}
 .change-table{
     width: 50%;
     text-align: justify;
@@ -52,7 +62,8 @@ border-radius: 0.5rem;
     margin: auto;
    border-color: blue;
    font-size: larger;
-   font-weight: 500;
+   padding: 2rem;
+   /* font-weight: 500; */
 }
 
 .change-table caption{
@@ -60,3 +71,42 @@ border-radius: 0.5rem;
     font-size: x-large;
     font-weight: 500;
 }
+
+
+.main-footer{
+
+   background: black;
+   padding: 32px;
+   margin-top: 50px; 
+   height: 10vh;
+    
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     
+     color: white;
+     text-align: center;
+   
+  }
+  
+  
+  .main-footer__links{
+   list-style: none;
+   margin:0;
+   padding: 0;
+   text-align: center;
+  }
+  .main-footer__link{
+  display:inline-block;
+  margin: 0 16px;
+  }
+  
+  .main-footer__link a{
+  color: white;
+  text-decoration: none;
+  }
+  
+  .main-footer__link a:hover,
+  .main-footer__link a:active {
+  color: #ccc;
+  } 

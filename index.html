@@ -6,7 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" href="">
         <title>Cash Register.</title>
+
         <link rel="stylesheet" href="index.css">
+
+        <!-- font awsome links -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
      
     </head>
     <body>
@@ -21,7 +26,7 @@
             <!-- <button>Next</button> -->
             <label class="bill" for="bill">Cash given: </label>
             <input id="cash-given" type="number" />
-            <button class="checkbtn">Check</button>
+            <button id="checkbtn">Check</button>
             <p id="error-message"></p>
             <table class="change-table" border= 2px solid>
                 <caption>
@@ -40,7 +45,7 @@
                 </tr>
                 <tr>
                     <th>Note</th>
-                    <td>200</td>
+                    <td>2000</td>
                     <td>500</td>
                     <td>100</td>
                     <td>20</td>
@@ -51,6 +56,22 @@
             </table>
         </div>
 
+
+        <footer class="main-footer">
+            <nav>
+                <ul class="main-footer__links">
+                    <li class="main-footer__link">
+                        <i class="fab fa-linkedin"></i>    <a href="https://www.linkedin.com/in/ravi-kumar-5ab056143/"> Linkedin</a>
+                    </li>
+                    <li class="main-footer__link">
+                        <i class="fab fa-github"></i>          <a href="https://github.com/Raviikumar001">Github</a>
+                    </li>
+                    <li class="main-footer__link">
+                        <i class="fab fa-medium"></i>    <a href="https://medium.com/@kumarraviabhi007">Medium</a>
+                  </li>
+                </ul>
+            </nav>
+        </footer>
     </body>
     <script src="index.js"></script>
 </html>
