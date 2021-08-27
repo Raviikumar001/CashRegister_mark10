@@ -8,14 +8,15 @@ const noOfNotes = document.querySelectorAll('.no_of_notes');
 const availableNotes = [2000,500,100,20,10,5,1];
 
 checkButton.addEventListener("click", function validate(){
-    console.log('hi');
+  
     hideMessage();
     if(billAmount.value >0){
-        if(cashGiven.value >= billAmount.value){
+        if(cashGiven.value >= billAmount.value)
+        {
      const amountTOBeReturned = cashGiven.value- billAmount.value;
      calculateChange(amountTOBeReturned);
-
-        }else{
+        }
+        else{
             showMessage(
                 "The cash provided should at least be equal to the bill amount"
             );
