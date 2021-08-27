@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" href="">
         <title>Cash Register.</title>
+        <link rel="stylesheet" href="index.css">
 
     </head>
     <body>
@@ -16,8 +17,40 @@
                 minimum number of notes to return.
             </p>
             <label for="bill-amount">Bill amount:  </label>
-            <label id="bill-amount" type="text" />
-            
+            <input id="bill-amount" type="number" />
+            <!-- <button>Next</button> -->
+            <label for="cash-given">Cash given: </label>
+            <input id="cash-given" type="number" />
+            <button id="checkbtn">Check</button>
+            <p id="error-message"></p>
+            <table class="change-table">
+                <caption>
+                    Return Change
+                </caption>
+                <tr>
+                    <th>No of Notes</th>
+                    <td class="no_of_notes"></td>
+                    <td class="no_of_notes"></td>
+                    <td class="no_of_notes"></td>
+                    <td class="no_of_notes"></td>
+                    <td class="no_of_notes"></td>
+                    <td class="no_of_notes"></td>
+                    <td class="no_of_notes"></td>
+
+                </tr>
+                <tr>
+                    <th>Note</th>
+                    <td>200</td>
+                    <td>500</td>
+                    <td>100</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>1</td>
+                </tr>
+            </table>
         </div>
+
     </body>
+    <script src="index.js"></script>
 </html>
