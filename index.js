@@ -9,22 +9,31 @@ const availableNotes = [2000,500,100,20,10,5,1];
 
 checkButton.addEventListener("click", function validate(){
   
+    let billAmountValue = Number(billAmount.value);
+    let cashGivenValue = Number(cashGiven.value);
     hideMessage();
-    if(billAmount.value >0){
-        if(cashGiven.value >= billAmount.value)
+   
+    if(billAmountValue >0 && cashGivenValue> 0){
+       
+        if(cashGivenValue > billAmountValue)
         {
-     const amountTOBeReturned = cashGiven.value- billAmount.value;
-     calculateChange(amountTOBeReturned);
+            const amountTOBeReturned = cashGiven.value- billAmount.value;
+            calculateChange(amountTOBeReturned);
+        }else{
+            showMessage("The cash provided should at least be equal to the bill amount");
         }
-        else{
-            showMessage(
-                "The cash provided should at least be equal to the bill amount"
-            );
 
+        if(cashGiven.value === billAmount.value)
+        {
+            showMessage("Nothing to return.");
         }
+
+  
+
+     
 
     }else{
-      showMessage("Invalid bill amount");
+      showMessage("Invalid Amount Entered Pls fill in the right detils.");
     }
    
 })
