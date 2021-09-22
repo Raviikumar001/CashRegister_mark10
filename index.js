@@ -21,6 +21,7 @@ checkButton.addEventListener("click", function validate(){
             calculateChange(amountTOBeReturned);
         }else{
             showMessage("The cash provided should at least be equal to the bill amount");
+            calculateChange(0);
         }
 
         if(cashGiven.value === billAmount.value)
